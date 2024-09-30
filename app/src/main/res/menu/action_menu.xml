@@ -1,0 +1,11 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option1"
+        android:title="@string/creator_app_profile"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/option2"
+        android:title="@string/real_madrid_profile"
+        tools:ignore="HardcodedText" />
+</menu>

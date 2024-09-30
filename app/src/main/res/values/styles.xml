@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DaddyPackageToolbar" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/daddy_package</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="DaddyPackage" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/daddy_package</item>
+    </style>
+    <style name="Canada" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/canada</item>
+    </style>
+    <style name="Kitchen" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/kitchen</item>
+    </style>
+    <style name="SummerWeekend" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/summer_weekend</item>
+    </style>
+    <style name="BackSchool" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/back_school</item>
+    </style>
+    <style name="BabyChubby" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/baby_chubby</item>
+    </style>
+    <style name="Tumbler" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/tumbler</item>
+    </style>
+</resources>

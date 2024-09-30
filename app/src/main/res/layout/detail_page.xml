@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black_282E3C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_marginTop="30dp"
+            android:id="@+id/tool_bar"
+            android:background="@color/black_282E3C"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white"
+            tools:title="Vini Jr (7)"
+            app:titleTextAppearance="@style/DaddyPackageToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_505C7C"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:background="@color/yellow_FDFF00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/yellow_FDFF00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/yellow_FDFF00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:paddingStart="10dp"
+                        android:background="@color/black_282E3C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlSymmetry">
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/gold_988829"
+                            app:cardCornerRadius="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/iv_photo"
+                                android:scaleType="centerCrop"
+                                android:layout_gravity="center"
+                                android:layout_width="150dp"
+                                android:layout_height="250dp"
+                                android:src="@drawable/ic_launcher_foreground"
+                                tools:ignore="ContentDescription" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_marginVertical="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_birth"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Date of birth >> Jul 12, 2000" />
+                            <TextView
+                                android:id="@+id/tv_age"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                android:background="@drawable/square_shape"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Age >> 24"/>
+                            <TextView
+                                android:id="@+id/tv_height"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Height >> 1,76 m"/>
+                            <TextView
+                                android:id="@+id/tv_national"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                android:background="@drawable/square_shape"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="National >> Brazil"/>
+                            <TextView
+                                android:id="@+id/tv_number"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Number >> 7"/>
+                            <TextView
+                                android:id="@+id/tv_position"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                android:background="@drawable/square_shape"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Position >> Attack - Left Winger"/>
+                            <TextView
+                                android:id="@+id/tv_foot"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Foot >> right"/>
+                            <TextView
+                                android:id="@+id/tv_joined"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                android:background="@drawable/square_shape"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Joined >> Jul 12, 2018"/>
+                            <TextView
+                                android:id="@+id/tv_expired"
+                                android:paddingStart="5dp"
+                                tools:ignore="RtlSymmetry"
+                                style="@style/Tumbler"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Contract expires >> Jun 30, 2027"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/toolbar_bottom_reverse"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tile_logos"
+                        android:id="@+id/iv_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:tint="@color/gold_988829"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:textColor="@color/black_282E3C"
+                        android:justificationMode="inter_word"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:background="@drawable/square_shape"
+                        android:layout_marginHorizontal="25dp"
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                        tools:targetApi="o" />
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginBottom="50dp"
+                        android:layout_below="@id/tv_description"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_website"
+                        app:icon="@drawable/baseline_public_24"
+                        android:layout_marginTop="15dp"
+                        app:backgroundTint="@color/gold_988829_3"
+                        android:layout_gravity="center"
+                        style="@style/DaddyPackage"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/click_here_for_next_info"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/baseline_share_24"
+        app:backgroundTint="@android:color/white"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

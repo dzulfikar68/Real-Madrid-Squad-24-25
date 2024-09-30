@@ -4,34 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
-    android:background="@color/yellow_FDFF00"
+    android:background="@color/black_282E3C"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/tool_bar"
-        android:background="@color/black_282E3C"
-        app:titleCentered="true"
-        app:titleTextColor="@color/yellow_FDFF00"
-        app:title="@string/app_name"
-        app:titleTextAppearance="@style/DaddyPackageToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <!--    <FrameLayout-->
+    <!--        android:background="@color/black_282E3C"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:src="@drawable/ic_real_madrid"/>-->
+    <!--    </FrameLayout>-->
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:contentDescription="navigation bottom"
-            android:scaleType="fitXY"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--        <FrameLayout-->
+        <!--            android:background="@color/black_282E3C"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent">-->
+        <!--            <ImageView-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_width="50dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:src="@drawable/ic_real_madrid"-->
+        <!--                app:tint="@color/white"-->
+        <!--                tools:ignore="ContentDescription" />-->
+        <!--        </FrameLayout>-->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_marginTop="30dp"
+            android:id="@+id/tool_bar"
+            android:background="@color/black_282E3C"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white"
+            app:title="@string/title_name"
+            app:titleTextAppearance="@style/DaddyPackageToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/toolbar_menu"/>
+        <FrameLayout
+            android:background="@color/black_282E3C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/toolbar_bottom"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_real_madrid_color"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/yellow_FDFF00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_real_madrid"
+            app:tint="@color/gold_988829"
+            tools:ignore="ContentDescription" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:id="@+id/rv_list"
+            android:paddingStart="15dp"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_view"
+            tools:orientation="vertical"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:spanCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="RtlSymmetry" />
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/toolbar_bottom"
+            tools:ignore="ContentDescription" />
     </FrameLayout>
 
 </LinearLayout>
